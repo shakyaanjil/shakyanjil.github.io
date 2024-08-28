@@ -4,10 +4,136 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Transformers</title>
+    <style>
+        /* Reset some default styles */
+        body, h1, h2, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: #fff;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        header .container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+        }
+
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        #menu-toggle {
+            display: none;
+        }
+
+        main .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        article {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            background: #fff;
+            padding: 10px 0;
+            border-top: 1px solid #ddd;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            #menu-toggle {
+                display: block;
+                background: #333;
+                color: #fff;
+                border: none;
+                padding: 10px;
+                cursor: pointer;
+            }
+
+            nav {
+                display: none;
+                flex-direction: column;
+            }
+
+            nav a {
+                margin: 10px 0;
+            }
+
+            nav.active {
+                display: flex;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Understanding Transformers</h1>
-    <p>creating content !!!</p>
-    <a href="index.html">Back to Home</a>
+    <header>
+        <div class="container">
+            <h1>Attention is all you need</h1>
+            <button id="menu-toggle">Menu</button>
+            <nav id="main-nav">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <div class="container">
+            <article>
+                <h2>Post Title</h2>
+                <p>This is the content of the first post. It includes text, images, and other elements.</p>
+            </article>
+            <article>
+                <h2>Another Post Title</h2>
+                <p>This is the content of another post. Feel free to add more articles here.</p>
+            </article>
+            <!-- Add more <article> elements as needed -->
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Your Blog Name. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const nav = document.getElementById('main-nav');
+            nav.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
