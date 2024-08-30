@@ -34,5 +34,5 @@ The primary purpose of this portfolio website is to present my work and expertis
 
 ## Future Enhancements
 
-Blog Section: I plan to add a blog section where I will share articles and insights related to Artificial Intelligence.
-Interactive Resume: An interactive resume feature that allows visitors to download a tailored PDF version of my resume.
+- Blog Section: I plan to add a blog section where I will share articles and insights related to Artificial Intelligence.
+- Interactive Resume: An interactive resume feature that allows visitors to download a tailored PDF version of my resume.
