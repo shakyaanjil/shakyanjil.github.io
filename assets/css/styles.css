@@ -800,6 +800,37 @@ body[data-theme="dark"] .text-muted {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.calendar {
+  color: #479FC8; /* Change the text color to white or another light color */
+}
+.calendar .contrib-legend, .calendar .text-gray {
+  color: #479FC8 !important; /* Lighten the legend text */
+}
+.calendar .day {
+  stroke: #333; /* Border color of each square */
+}
+.calendar .contrib-legend .legend-item {
+  background-color: #444 !important; /* Background for the contribution levels */
+}
+.calendar .day[data-level="1"] {
+  fill: #444 !important; /* Lightest contribution color */
+}
+.calendar .day[data-level="2"] {
+  fill: #666 !important; /* Slightly darker */
+}
+.calendar .day[data-level="3"] {
+  fill: #888 !important; /* Darker */
+}
+.calendar .day[data-level="4"] {
+  fill: #aaa !important; /* Darkest */
+}
+
+.calendar .contrib-column {
+  display: none;
+}
+
+.calendar .
+
 @media (max-width: 767.98px) {
   .header {
     text-align: center;
