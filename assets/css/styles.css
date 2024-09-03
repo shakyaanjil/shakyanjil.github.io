@@ -829,7 +829,56 @@ body[data-theme="dark"] .text-muted {
   display: none;
 }
 
-.calendar .
+.calendar .width-full{
+  display: none;
+}
+
+.ContributionCalendar-day[data-level='0'] {
+  background-color: transparent !important;
+}
+
+.icon-box {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.08);
+  transition: ease-in-out 0.3s;
+}
+
+/* .icon-box img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+}*/
+
+.icon-box h3 {
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-size: 16px;
+  color: #fff;
+} 
+
+/* .icon-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+} */
+
+.content .container {
+  background: rgba(0, 0, 0, 0.9);
+  padding: 30px;
+}
+
+
+.level-title {
+  text-align: center;
+}
+
+.skills .skillset .item {
+  margin-bottom: 10px !important;
+}
 
 @media (max-width: 767.98px) {
   .header {
