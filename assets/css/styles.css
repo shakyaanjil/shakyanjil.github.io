@@ -880,6 +880,10 @@ body[data-theme="dark"] .text-muted {
   margin-bottom: 10px !important;
 }
 
+.calendar td{
+  border-radius: 4px;
+}
+
 @media (max-width: 767.98px) {
   .header {
     text-align: center;
